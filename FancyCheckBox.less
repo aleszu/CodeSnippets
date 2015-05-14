@@ -1,0 +1,48 @@
+/*========================================
+
+GEORGE'S CODE SNIPPETS
+
+========================================*/
+
+
+/*NICE CHECKBOX STYLING*/
+
+.checkbox {
+	cursor: pointer;
+
+	input[type=checkbox] {
+		display: none;
+
+		+ i.fa {
+			float: left;
+			padding: 4px 5px 0 0;
+			-webkit-transition: color 1s ease-out;
+			-moz-transition: color 1s ease-out;
+			-ms-transition: color 1s ease-out;
+			-o-transition: color 1s ease-out;
+			transition: color 1s ease-out;
+
+			&:hover {
+				color: @peterriver;
+				-webkit-transition: color .3s ease-in;
+				-moz-transition: color .3s ease-in;
+				-ms-transition: color .3s ease-in;
+				-o-transition: color .3s ease-in;
+				transition: color .3s ease-in;
+			}
+		}
+	}
+}
+
+.checkbox input[type=checkbox]:checked {
+
+	+ i.fa {
+		color: @peterriver;
+	}
+}
+
+/*jQuery for above to work: 
+
+$j('label.checkbox').append('<i class="fa fa-check-circle-o fa-fw"></i>');
+
+*/
