@@ -37,7 +37,8 @@
 }
 
 .audioBug h6 {
-  font-size: 1.3rem;
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-size: 1.2rem;
   color: white;
   line-height: 1.3rem;
   float: right;
