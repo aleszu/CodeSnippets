@@ -53,7 +53,7 @@ var audioElement = document.createElement('audio');
 		$('.audioBug > h6').fadeIn('slow');	
 	}, function() {
 		$('.audioBug > h6').fadeOut(500);
-		setTimeout(function() {
+		timer = setTimeout(function() {
 			$('.audioBug').removeClass('expanded');
 		}, 1000);
 	});
