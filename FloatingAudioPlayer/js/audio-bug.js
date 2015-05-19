@@ -50,9 +50,9 @@ var audioElement = document.createElement('audio');
 	$('.audioBug').hover(function() {
 		clearTimeout(timer);
 		$(this).addClass('expanded');
-		$('.audioBug > h6').fadeIn('slow');	
+		$('.audioBug > h6').fadeIn();
 	}, function() {
-		$('.audioBug > h6').fadeOut(500);
+		$('.audioBug > h6').fadeOut('slow');
 		timer = setTimeout(function() {
 			$('.audioBug').removeClass('expanded');
 		}, 1000);
@@ -72,7 +72,7 @@ var audioElement = document.createElement('audio');
 		$('.audioBug').addClass('expanded');
 	}, 2000);
 	setTimeout(function() {
-		$('.audioBug > h6').fadeIn(500, function() {
+		$('.audioBug > h6').fadeIn(300, function() {
 			removeBumper();
 		});
 	}, 2700);
